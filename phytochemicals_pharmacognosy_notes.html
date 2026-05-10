@@ -1,0 +1,752 @@
+
+<h2 class="sr-only">Phytochemicals of Pharmacognosy — Complete Viva Preparation Notes</h2>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-sans); }
+  .hero { padding: 1.5rem 0 1rem; border-bottom: 0.5px solid var(--color-border-tertiary); margin-bottom: 1.5rem; }
+  .hero h1 { font-size: 22px; font-weight: 500; color: var(--color-text-primary); }
+  .hero p { font-size: 14px; color: var(--color-text-secondary); margin-top: 6px; }
+  .tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .tab { padding: 6px 14px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-secondary); font-size: 13px; cursor: pointer; background: var(--color-background-primary); color: var(--color-text-secondary); transition: all 0.15s; }
+  .tab.active { background: #E6F1FB; color: #0C447C; border-color: #85B7EB; font-weight: 500; }
+  .tab:hover:not(.active) { background: var(--color-background-secondary); color: var(--color-text-primary); }
+  .section { display: none; }
+  .section.active { display: block; }
+  .card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem; margin-bottom: 1rem; }
+  .card h2 { font-size: 16px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 8px; }
+  .card h3 { font-size: 14px; font-weight: 500; color: var(--color-text-primary); margin: 0.75rem 0 0.4rem; }
+  .card p, .card li { font-size: 14px; color: var(--color-text-secondary); line-height: 1.7; }
+  .card ul, .card ol { padding-left: 1.2rem; }
+  .card li { margin-bottom: 4px; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: var(--border-radius-md); margin: 0 3px 3px 0; }
+  .badge-blue { background: #E6F1FB; color: #0C447C; }
+  .badge-green { background: #EAF3DE; color: #27500A; }
+  .badge-amber { background: #FAEEDA; color: #633806; }
+  .badge-red { background: #FCEBEB; color: #791F1F; }
+  .badge-purple { background: #EEEDFE; color: #3C3489; }
+  .badge-teal { background: #E1F5EE; color: #085041; }
+  .highlight { background: #FAEEDA; color: #633806; padding: 0.75rem 1rem; border-radius: var(--border-radius-md); margin: 0.5rem 0; font-size: 13px; border-left: 3px solid #EF9F27; }
+  .qa { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.75rem 1rem; margin: 0.5rem 0; }
+  .qa .q { font-size: 13px; font-weight: 500; color: #0C447C; margin-bottom: 4px; }
+  .qa .a { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+  .metric { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem; }
+  .metric .label { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 4px; }
+  .metric .value { font-size: 18px; font-weight: 500; color: var(--color-text-primary); }
+  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 1rem 0; }
+  table { width: 100%; font-size: 13px; border-collapse: collapse; }
+  th { text-align: left; padding: 8px 10px; background: var(--color-background-secondary); color: var(--color-text-secondary); font-weight: 500; border-bottom: 0.5px solid var(--color-border-tertiary); }
+  td { padding: 8px 10px; color: var(--color-text-secondary); border-bottom: 0.5px solid var(--color-border-tertiary); vertical-align: top; }
+  .icon { font-size: 18px; }
+</style>
+
+<div style="padding: 0 0 2rem;">
+  <div class="hero">
+    <h1>Phytochemicals of Pharmacognosy</h1>
+    <p>Complete viva preparation notes — Pharm D | Click a topic to study</p>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" onclick="show('intro')">Introduction</button>
+    <button class="tab" onclick="show('alkaloids')">Alkaloids</button>
+    <button class="tab" onclick="show('glycosides')">Glycosides</button>
+    <button class="tab" onclick="show('terpenes')">Terpenes</button>
+    <button class="tab" onclick="show('phenolics')">Phenolics & Flavonoids</button>
+    <button class="tab" onclick="show('tannins')">Tannins & Resins</button>
+    <button class="tab" onclick="show('oils')">Oils & Waxes</button>
+    <button class="tab" onclick="show('other')">Others</button>
+    <button class="tab" onclick="show('viva')">Viva Q&A</button>
+  </div>
+
+  <!-- INTRODUCTION -->
+  <div id="intro" class="section active">
+    <div class="card">
+      <h2><i class="ti ti-leaf icon" aria-hidden="true"></i> What are Phytochemicals?</h2>
+      <p>Phytochemicals (Greek: <em>phyton</em> = plant) are biologically active naturally occurring chemical compounds found in plants. They protect plants against disease, predation, and environmental stress — and many have significant pharmacological activity in humans.</p>
+      <div class="highlight">
+        Key definition: Secondary metabolites of plants that are not essential for basic plant growth but serve ecological and defensive roles — and are the basis of many drugs.
+      </div>
+      <h3>Primary vs Secondary Metabolites</h3>
+      <div class="grid2">
+        <div class="metric">
+          <div class="label">Primary Metabolites</div>
+          <div class="value" style="font-size:14px; font-weight:400; color: var(--color-text-secondary);">Essential for life — carbohydrates, proteins, lipids, nucleic acids. Universally present in all cells.</div>
+        </div>
+        <div class="metric">
+          <div class="label">Secondary Metabolites (Phytochemicals)</div>
+          <div class="value" style="font-size:14px; font-weight:400; color: var(--color-text-secondary);">Not essential for basic survival. Found in specific plant species. Include alkaloids, glycosides, terpenes, flavonoids etc.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><i class="ti ti-category icon" aria-hidden="true"></i> Classification of Phytochemicals</h2>
+      <table>
+        <tr><th>Class</th><th>Examples</th><th>Pharmacological Activity</th></tr>
+        <tr><td><span class="badge badge-purple">Alkaloids</span></td><td>Morphine, Quinine, Caffeine</td><td>Analgesic, Antimalarial, CNS stimulant</td></tr>
+        <tr><td><span class="badge badge-blue">Glycosides</span></td><td>Digoxin, Salicin, Amygdalin</td><td>Cardiac, Analgesic, Cytotoxic</td></tr>
+        <tr><td><span class="badge badge-green">Terpenes</span></td><td>Menthol, Camphor, Taxol</td><td>Antiseptic, Anticancer, Antimicrobial</td></tr>
+        <tr><td><span class="badge badge-amber">Flavonoids</span></td><td>Quercetin, Rutin, Catechins</td><td>Antioxidant, Anti-inflammatory</td></tr>
+        <tr><td><span class="badge badge-red">Tannins</span></td><td>Tannic acid, Gallic acid</td><td>Astringent, Antimicrobial</td></tr>
+        <tr><td><span class="badge badge-teal">Resins</span></td><td>Colophony, Balsam</td><td>Antiseptic, Expectorant</td></tr>
+        <tr><td><span class="badge badge-purple">Fixed Oils</span></td><td>Castor oil, Olive oil</td><td>Laxative, Emollient</td></tr>
+        <tr><td><span class="badge badge-blue">Volatile Oils</span></td><td>Eucalyptol, Thymol</td><td>Antimicrobial, Expectorant</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2><i class="ti ti-flask icon" aria-hidden="true"></i> Importance in Pharmacy</h2>
+      <ul>
+        <li>About <strong>25%</strong> of modern drugs are derived directly from plants or synthesized based on plant phytochemicals</li>
+        <li>Basis of traditional medicine systems (Ayurveda, Unani, TCM)</li>
+        <li>Used as lead compounds for drug discovery</li>
+        <li>Used as excipients (binders, coating agents) in pharmaceuticals</li>
+        <li>Quality control markers for standardization of herbal drugs</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ALKALOIDS -->
+  <div id="alkaloids" class="section">
+    <div class="card">
+      <h2><i class="ti ti-atom icon" aria-hidden="true"></i> Alkaloids</h2>
+      <p>Alkaloids are nitrogen-containing organic compounds of plant origin that are basic in nature (contain nitrogen in heterocyclic ring), have complex molecular structure, and show marked physiological activity.</p>
+      <div class="highlight">
+        <strong>Definition by Pelletier (1983):</strong> A cyclic organic compound containing nitrogen in a negative oxidation state which is of limited distribution among living organisms.
+      </div>
+      <h3>General Properties</h3>
+      <ul>
+        <li>Mostly basic in nature (due to lone pair of electrons on N)</li>
+        <li>Bitter taste, white crystalline solids (mostly)</li>
+        <li>Sparingly soluble in water; soluble in organic solvents</li>
+        <li>Alkaloid salts are water soluble and used in medicine</li>
+        <li>Optically active (laevorotatory mostly)</li>
+        <li>React with alkaloidal reagents (precipitate tests)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Classification of Alkaloids</h2>
+      <h3>Based on Chemical Structure (Most Important)</h3>
+      <table>
+        <tr><th>Type</th><th>Ring System</th><th>Example</th><th>Drug Use</th></tr>
+        <tr><td>Pyridine-Piperidine</td><td>6-membered ring with N</td><td>Nicotine, Lobeline</td><td>Smoking cessation</td></tr>
+        <tr><td>Tropane</td><td>Bicyclic, N in bridge</td><td>Atropine, Cocaine</td><td>Anticholinergic, Local anaesthetic</td></tr>
+        <tr><td>Quinoline</td><td>Benzene fused pyridine</td><td>Quinine, Quinidine</td><td>Antimalarial, Antiarrhythmic</td></tr>
+        <tr><td>Isoquinoline</td><td>Isomeric quinoline</td><td>Morphine, Codeine, Papaverine</td><td>Analgesic, Antitussive, Antispasmodic</td></tr>
+        <tr><td>Indole</td><td>Benzene + pyrrole</td><td>Ergotamine, Reserpine, Vinblastine</td><td>Migraine, Antihypertensive, Anticancer</td></tr>
+        <tr><td>Imidazole</td><td>5-membered with 2N</td><td>Pilocarpine, Histamine</td><td>Glaucoma, Allergic response</td></tr>
+        <tr><td>Purine</td><td>Bicyclic, 4N</td><td>Caffeine, Theophylline</td><td>CNS stimulant, Bronchodilator</td></tr>
+        <tr><td>Steroidal</td><td>Steroid nucleus + N</td><td>Solanine, Veratrine</td><td>Toxic</td></tr>
+      </table>
+
+      <h3>Biosynthetic Classification</h3>
+      <ul>
+        <li><strong>From ornithine:</strong> Pyrrolizidine, Tropane alkaloids (Atropine)</li>
+        <li><strong>From lysine:</strong> Piperidine, Quinolizidine alkaloids (Sparteine)</li>
+        <li><strong>From tyrosine:</strong> Isoquinoline alkaloids (Morphine)</li>
+        <li><strong>From tryptophan:</strong> Indole alkaloids (Ergotamine, Reserpine)</li>
+        <li><strong>From anthranilic acid:</strong> Quinazoline alkaloids</li>
+        <li><strong>From histidine:</strong> Imidazole alkaloids (Pilocarpine)</li>
+        <li><strong>From purines:</strong> Purine alkaloids (Caffeine)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Important Individual Alkaloids</h2>
+      <h3>Morphine (Opium alkaloid)</h3>
+      <ul>
+        <li><strong>Source:</strong> Papaver somniferum (Opium poppy), Family: Papaveraceae</li>
+        <li><strong>Type:</strong> Isoquinoline alkaloid (Phenanthrene nucleus)</li>
+        <li><strong>Use:</strong> Narcotic analgesic, severe pain, pre-anesthetic medication</li>
+        <li><strong>Chemical test:</strong> Marquis test (H₂SO₄ + formaldehyde → purple/violet color)</li>
+      </ul>
+      <hr class="divider">
+      <h3>Quinine</h3>
+      <ul>
+        <li><strong>Source:</strong> Cinchona bark (Cinchona succirubra), Family: Rubiaceae</li>
+        <li><strong>Type:</strong> Quinoline alkaloid</li>
+        <li><strong>Use:</strong> Antimalarial, Antipyretic, Bitter tonic, Antiarrhythmic</li>
+        <li><strong>Chemical test:</strong> Thalleioquin test — green color with bromine water + ammonia</li>
+      </ul>
+      <hr class="divider">
+      <h3>Atropine</h3>
+      <ul>
+        <li><strong>Source:</strong> Atropa belladonna (Deadly nightshade), Family: Solanaceae</li>
+        <li><strong>Type:</strong> Tropane alkaloid</li>
+        <li><strong>Use:</strong> Anticholinergic, Mydriatic, Pre-anesthetic, Antispasmodic</li>
+        <li><strong>Chemical test:</strong> Vitali-Morin test — purple color with fuming nitric acid + KOH</li>
+      </ul>
+      <hr class="divider">
+      <h3>Ergotamine</h3>
+      <ul>
+        <li><strong>Source:</strong> Claviceps purpurea (ergot fungus on rye), Family: Clavicipitaceae</li>
+        <li><strong>Type:</strong> Indole alkaloid (Ergoline nucleus)</li>
+        <li><strong>Use:</strong> Migraine, Uterine stimulant, Hemostatic</li>
+      </ul>
+      <hr class="divider">
+      <h3>Reserpine</h3>
+      <ul>
+        <li><strong>Source:</strong> Rauwolfia serpentina (Indian snakeroot), Family: Apocynaceae</li>
+        <li><strong>Type:</strong> Indole alkaloid</li>
+        <li><strong>Use:</strong> Antihypertensive, Antipsychotic (depletes catecholamines)</li>
+      </ul>
+      <hr class="divider">
+      <h3>Vinca Alkaloids (Vinblastine & Vincristine)</h3>
+      <ul>
+        <li><strong>Source:</strong> Catharanthus roseus (Vinca rosea), Family: Apocynaceae</li>
+        <li><strong>Type:</strong> Bis-indole alkaloid</li>
+        <li><strong>Use:</strong> Anticancer — inhibit tubulin polymerization (mitotic spindle poison)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>General Chemical Tests for Alkaloids</h2>
+      <table>
+        <tr><th>Reagent</th><th>Test</th><th>Result</th></tr>
+        <tr><td>Mayer's reagent (K₂HgI₄)</td><td>Mayer's test</td><td>Cream/white precipitate</td></tr>
+        <tr><td>Dragendorff's reagent (KBiI₄)</td><td>Dragendorff's test</td><td>Orange-red precipitate</td></tr>
+        <tr><td>Wagner's reagent (I₂ + KI)</td><td>Wagner's test</td><td>Reddish-brown precipitate</td></tr>
+        <tr><td>Hager's reagent (Picric acid)</td><td>Hager's test</td><td>Yellow precipitate</td></tr>
+        <tr><td>Tannic acid (10%)</td><td>Tannic acid test</td><td>Buff colored precipitate</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- GLYCOSIDES -->
+  <div id="glycosides" class="section">
+    <div class="card">
+      <h2><i class="ti ti-dna icon" aria-hidden="true"></i> Glycosides</h2>
+      <p>Glycosides are organic compounds in which a sugar (glycone) is bonded to a non-sugar moiety (aglycone/genin) through a glycosidic linkage (usually O-glycosidic bond). On hydrolysis (acid, alkali, or enzyme), they yield sugar + aglycone.</p>
+      <div class="highlight">
+        <strong>Glycoside = Glycone (sugar) + Aglycone (non-sugar/genin)</strong><br>
+        The pharmacological activity resides mainly in the aglycone portion; the sugar portion influences solubility, absorption, and potency.
+      </div>
+      <h3>General Properties</h3>
+      <ul>
+        <li>Colorless crystalline solids, bitter taste</li>
+        <li>Optically active (usually laevorotatory)</li>
+        <li>Hydrolyzed by acids, alkalis, or specific enzymes (emulsin, synaptase)</li>
+        <li>Water soluble due to sugar component</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Classification of Glycosides</h2>
+      <h3>Based on Nature of Glycosidic Bond</h3>
+      <ul>
+        <li><strong>O-glycosides:</strong> Most common — sugar linked to aglycone via oxygen</li>
+        <li><strong>S-glycosides (Thioglycosides):</strong> Linked via sulfur — e.g., Sinigrin (mustard)</li>
+        <li><strong>N-glycosides:</strong> Linked via nitrogen — e.g., Nucleosides</li>
+        <li><strong>C-glycosides:</strong> Direct C–C bond — e.g., Barbaloin (aloe)</li>
+      </ul>
+      <h3>Based on Aglycone (Pharmacological Classification)</h3>
+      <table>
+        <tr><th>Type</th><th>Aglycone</th><th>Example</th><th>Drug Use</th></tr>
+        <tr><td>Cardiac glycosides</td><td>Steroidal lactone (cardenolide/bufadienolide)</td><td>Digoxin, Digitoxin</td><td>Congestive heart failure, Atrial fibrillation</td></tr>
+        <tr><td>Anthraquinone glycosides</td><td>Anthraquinone nucleus</td><td>Sennoside, Barbaloin, Emodin</td><td>Laxative/Purgative</td></tr>
+        <tr><td>Saponin glycosides</td><td>Triterpenoid/Steroid</td><td>Glycyrrhizin, Diosgenin</td><td>Expectorant, Anti-inflammatory, Steroid synthesis</td></tr>
+        <tr><td>Cyanogenic glycosides</td><td>Releases HCN on hydrolysis</td><td>Amygdalin, Prunasin</td><td>Antitussive (Amygdalin — controversial in cancer)</td></tr>
+        <tr><td>Isothiocyanate glycosides</td><td>Releases isothiocyanate</td><td>Sinigrin, Sinalbin</td><td>Rubefacient, Counter-irritant</td></tr>
+        <tr><td>Flavonoid glycosides</td><td>Flavone/Flavonol</td><td>Rutin, Hesperidin</td><td>Vitamin P, Capillary fragility</td></tr>
+        <tr><td>Alcoholic glycosides</td><td>Phenolic alcohol</td><td>Salicin</td><td>Analgesic, Anti-inflammatory</td></tr>
+        <tr><td>Lactone glycosides</td><td>Lactone ring</td><td>Cantharides</td><td>Diuretic</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Cardiac Glycosides — Most Important</h2>
+      <p><strong>Sources:</strong></p>
+      <ul>
+        <li>Digitalis purpurea → Digitoxin, Digitalinum verum (Family: Scrophulariaceae)</li>
+        <li>Digitalis lanata → Digoxin, Lanatosides (most used clinically)</li>
+        <li>Strophanthus kombe → Ouabain (G-strophanthin)</li>
+        <li>Convallaria majalis → Convallotoxin</li>
+        <li>Bufo toad → Bufadienolides (animal source)</li>
+      </ul>
+      <h3>Mechanism of Action</h3>
+      <p>Inhibit Na⁺/K⁺-ATPase pump → ↑ intracellular Na⁺ → ↑ intracellular Ca²⁺ (via Na/Ca exchanger) → positive inotropic effect (stronger heart contraction)</p>
+      <h3>Chemical Tests</h3>
+      <ul>
+        <li><strong>Keller-Kiliani test:</strong> Digitoxose (deoxy sugar) — blue/green ring at junction with H₂SO₄ + FeCl₃</li>
+        <li><strong>Legal's test:</strong> Lactone ring — red color with Na-nitroprusside + NaOH</li>
+        <li><strong>Kedde's test:</strong> Unsaturated lactone — violet color with 3,5-dinitrobenzoic acid + KOH</li>
+        <li><strong>Liebermann-Burchard test:</strong> Steroidal nucleus — green color</li>
+        <li><strong>Raymond test:</strong> Red-violet color with m-dinitrobenzene + KOH</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Saponins</h2>
+      <p>Saponins are glycosides that produce persistent foam when shaken with water (like soap). They lower surface tension of water.</p>
+      <h3>Types</h3>
+      <ul>
+        <li><strong>Triterpenoid saponins:</strong> Glycyrrhizin (liquorice), Escin (horse chestnut)</li>
+        <li><strong>Steroidal saponins:</strong> Diosgenin (Dioscorea sp.) — used for synthesis of steroidal drugs (cortisone, contraceptives)</li>
+      </ul>
+      <h3>Properties</h3>
+      <ul>
+        <li>Produce stable froth/foam with water</li>
+        <li>Hemolytic (rupture RBCs) — except soya saponins</li>
+        <li>Highly toxic if injected IV but relatively non-toxic orally</li>
+        <li>Precipitate with cholesterol</li>
+      </ul>
+      <h3>Uses</h3>
+      <ul>
+        <li>Expectorants (stimulate respiratory mucus secretion)</li>
+        <li>Diuretics</li>
+        <li>Source for steroid hormone synthesis (Diosgenin)</li>
+        <li>Adjuvants in vaccines</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- TERPENES -->
+  <div id="terpenes" class="section">
+    <div class="card">
+      <h2><i class="ti ti-tree icon" aria-hidden="true"></i> Terpenes & Terpenoids</h2>
+      <p>Terpenes are the largest and most diverse class of natural products. They are hydrocarbons built from isoprene (C₅H₈) units following the <strong>"Isoprene Rule"</strong> (Wallach's rule). Terpenoids are oxygenated derivatives of terpenes.</p>
+      <div class="highlight">
+        <strong>Isoprene unit:</strong> CH₂=C(CH₃)–CH=CH₂ (C₅H₈)<br>
+        All terpenes are multiples of isoprene units (C₅ rule).
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Classification Based on Number of Isoprene Units</h2>
+      <table>
+        <tr><th>Class</th><th>Isoprene Units</th><th>Carbon #</th><th>Examples</th></tr>
+        <tr><td>Hemiterpenes</td><td>1</td><td>C₅</td><td>Isoprene itself</td></tr>
+        <tr><td>Monoterpenes</td><td>2</td><td>C₁₀</td><td>Menthol, Camphor, Thymol, Limonene, Geraniol</td></tr>
+        <tr><td>Sesquiterpenes</td><td>3</td><td>C₁₅</td><td>Bisabolol, Farnesol, Artemisinin</td></tr>
+        <tr><td>Diterpenes</td><td>4</td><td>C₂₀</td><td>Taxol (Paclitaxel), Retinol (Vit A), Phytol</td></tr>
+        <tr><td>Sesterterpenes</td><td>5</td><td>C₂₅</td><td>Ophiobolins</td></tr>
+        <tr><td>Triterpenes</td><td>6</td><td>C₃₀</td><td>Squalene, Ursolic acid, Glycyrrhizin aglycone</td></tr>
+        <tr><td>Tetraterpenes</td><td>8</td><td>C₄₀</td><td>β-Carotene, Lycopene</td></tr>
+        <tr><td>Polyterpenes</td><td>>8</td><td>>C₄₀</td><td>Natural rubber (gutta percha)</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Important Terpenes</h2>
+      <h3>Menthol (Monoterpene)</h3>
+      <ul>
+        <li><strong>Source:</strong> Mentha piperita (Peppermint), Family: Lamiaceae</li>
+        <li><strong>Type:</strong> Cyclic monoterpene alcohol</li>
+        <li><strong>Use:</strong> Counterirritant, Carminative, Nasal decongestant, Flavoring agent, Antiseptic</li>
+        <li>Activates TRPM8 cold receptors — produces cooling sensation</li>
+      </ul>
+      <hr class="divider">
+      <h3>Camphor (Monoterpene)</h3>
+      <ul>
+        <li><strong>Source:</strong> Cinnamomum camphora, Family: Lauraceae</li>
+        <li><strong>Type:</strong> Bicyclic monoterpene ketone</li>
+        <li><strong>Use:</strong> Counterirritant, Antipruritic, Mild antiseptic, Expectorant</li>
+      </ul>
+      <hr class="divider">
+      <h3>Artemisinin (Sesquiterpene)</h3>
+      <ul>
+        <li><strong>Source:</strong> Artemisia annua (Sweet wormwood), Family: Asteraceae</li>
+        <li><strong>Type:</strong> Sesquiterpene lactone with endoperoxide bridge</li>
+        <li><strong>Use:</strong> Most effective antimalarial, especially for drug-resistant P. falciparum</li>
+        <li>Acts by generating free radicals that damage parasite proteins</li>
+      </ul>
+      <hr class="divider">
+      <h3>Paclitaxel/Taxol (Diterpene)</h3>
+      <ul>
+        <li><strong>Source:</strong> Taxus brevifolia (Pacific yew), Family: Taxaceae</li>
+        <li><strong>Type:</strong> Diterpene</li>
+        <li><strong>Use:</strong> Anticancer — ovarian, breast, lung cancer</li>
+        <li><strong>MOA:</strong> Stabilizes microtubules → prevents mitosis (opposite to vinca alkaloids)</li>
+      </ul>
+      <hr class="divider">
+      <h3>β-Carotene (Tetraterpene)</h3>
+      <ul>
+        <li><strong>Source:</strong> Carrots, tomatoes, plant pigments</li>
+        <li><strong>Type:</strong> Tetraterpene (carotenoid)</li>
+        <li><strong>Use:</strong> Pro-vitamin A, Antioxidant, prevents xerophthalmia</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PHENOLICS & FLAVONOIDS -->
+  <div id="phenolics" class="section">
+    <div class="card">
+      <h2><i class="ti ti-circles icon" aria-hidden="true"></i> Phenolic Compounds & Flavonoids</h2>
+      <p>Phenolic compounds contain one or more hydroxyl groups (–OH) attached to an aromatic benzene ring. They are the most abundant secondary metabolites in plants. Flavonoids are a subclass of polyphenols with a C₆-C₃-C₆ (diphenylpropane) skeleton.</p>
+    </div>
+
+    <div class="card">
+      <h2>Flavonoids</h2>
+      <div class="highlight">
+        <strong>Basic structure:</strong> Two phenyl rings (A and B) connected by a 3-carbon chain forming a pyran ring. General formula: C₆-C₃-C₆
+      </div>
+      <h3>Classification of Flavonoids</h3>
+      <table>
+        <tr><th>Class</th><th>Examples</th><th>Sources</th><th>Activity</th></tr>
+        <tr><td>Flavones</td><td>Apigenin, Luteolin</td><td>Parsley, celery</td><td>Anti-inflammatory, Antioxidant</td></tr>
+        <tr><td>Flavonols</td><td>Quercetin, Kaempferol, Rutin</td><td>Onions, apples, tea</td><td>Antioxidant, anti-inflammatory</td></tr>
+        <tr><td>Flavanones</td><td>Hesperidin, Naringenin</td><td>Citrus fruits</td><td>Vit P activity, anti-inflammatory</td></tr>
+        <tr><td>Flavanols (Catechins)</td><td>Catechin, Epicatechin</td><td>Green tea, cacao</td><td>Antioxidant, cardioprotective</td></tr>
+        <tr><td>Isoflavones</td><td>Genistein, Daidzein</td><td>Soybean</td><td>Phytoestrogen, anticancer</td></tr>
+        <tr><td>Anthocyanidins</td><td>Cyanidin, Delphinidin</td><td>Berries, grapes</td><td>Antioxidant, pigments</td></tr>
+        <tr><td>Chalcones</td><td>Butein, Isoliquiritigenin</td><td>Liquorice</td><td>Anti-inflammatory</td></tr>
+      </table>
+      <h3>Pharmacological Activities of Flavonoids</h3>
+      <ul>
+        <li><strong>Antioxidant:</strong> Scavenge free radicals, chelate metal ions</li>
+        <li><strong>Anti-inflammatory:</strong> Inhibit COX, LOX enzymes</li>
+        <li><strong>Anticancer:</strong> Induce apoptosis, inhibit angiogenesis</li>
+        <li><strong>Cardiovascular:</strong> Reduce platelet aggregation, strengthen capillaries</li>
+        <li><strong>Antimicrobial:</strong> Disrupt cell membranes of microbes</li>
+        <li><strong>Antiviral:</strong> Quercetin active against influenza, HIV</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Rutin & Hesperidin (Important for Viva)</h2>
+      <h3>Rutin</h3>
+      <ul>
+        <li><strong>Chemical:</strong> Quercetin-3-rutinoside (flavonol glycoside)</li>
+        <li><strong>Sources:</strong> Buckwheat (Fagopyrum esculentum), Rue (Ruta graveolens)</li>
+        <li><strong>Uses:</strong> Vitamin P activity, reduce capillary fragility, anti-inflammatory</li>
+        <li><strong>Test:</strong> Shinoda test (magnesium + HCl) → pink/red color</li>
+      </ul>
+      <h3>Hesperidin</h3>
+      <ul>
+        <li><strong>Source:</strong> Citrus species (orange peel)</li>
+        <li><strong>Type:</strong> Flavanone glycoside</li>
+        <li><strong>Uses:</strong> Reduces capillary permeability, Vitamin P, anti-inflammatory</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Simple Phenols & Phenylpropanoids</h2>
+      <table>
+        <tr><th>Compound</th><th>Source</th><th>Use</th></tr>
+        <tr><td>Eugenol</td><td>Cloves (Syzygium aromaticum)</td><td>Dental analgesic, antiseptic</td></tr>
+        <tr><td>Thymol</td><td>Thyme (Thymus vulgaris)</td><td>Antiseptic, antifungal (in mouthwash)</td></tr>
+        <tr><td>Salicylic acid</td><td>Willow bark (Salix sp.)</td><td>Keratolytic, precursor to aspirin</td></tr>
+        <tr><td>Capsaicin</td><td>Capsicum annuum (chilli)</td><td>Counterirritant, analgesic cream</td></tr>
+        <tr><td>Curcumin</td><td>Curcuma longa (turmeric)</td><td>Anti-inflammatory, antioxidant, anticancer</td></tr>
+        <tr><td>Resveratrol</td><td>Grapes, red wine</td><td>Cardioprotective, antioxidant</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- TANNINS & RESINS -->
+  <div id="tannins" class="section">
+    <div class="card">
+      <h2><i class="ti ti-droplet icon" aria-hidden="true"></i> Tannins</h2>
+      <p>Tannins are complex polyphenolic compounds with molecular weight 500–3000 Da that precipitate proteins. The term "tannin" comes from their ability to convert (tan) animal hides into leather.</p>
+      <div class="highlight">
+        <strong>Definition:</strong> Water-soluble polyphenolic compounds that precipitate proteins, alkaloids, and gelatin from solution, and produce a blue-black or green-black color with iron salts.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Classification of Tannins</h2>
+      <div class="grid2">
+        <div class="metric">
+          <div class="label">1. Hydrolysable Tannins</div>
+          <div style="font-size:13px; color: var(--color-text-secondary); margin-top:8px; line-height:1.7">Hydrolyzed by acid, alkali, or enzymes into sugars + phenolic acids.<br><br><strong>Gallotannins:</strong> Yield gallic acid (e.g., Tannic acid from galls, Myrabolan)<br><strong>Ellagitannins:</strong> Yield ellagic acid (e.g., Pomegranate rind)</div>
+        </div>
+        <div class="metric">
+          <div class="label">2. Condensed Tannins (Proanthocyanidins)</div>
+          <div style="font-size:13px; color: var(--color-text-secondary); margin-top:8px; line-height:1.7">Not easily hydrolyzed; on acid treatment produce anthocyanidins (red color). Formed by condensation of flavan-3-ols.<br><br>Examples: Catechu (from Acacia catechu), Gambir</div>
+        </div>
+      </div>
+      <h3>Differences: Hydrolysable vs Condensed</h3>
+      <table>
+        <tr><th>Property</th><th>Hydrolysable</th><th>Condensed</th></tr>
+        <tr><td>Hydrolysis</td><td>Easy (acid/alkali/enzyme)</td><td>Resistant</td></tr>
+        <tr><td>Products</td><td>Sugars + gallic/ellagic acid</td><td>Phlobaphenes (red/brown amorphous)</td></tr>
+        <tr><td>FeCl₃ test</td><td>Blue-black color</td><td>Green-black color</td></tr>
+        <tr><td>Example</td><td>Tannic acid, Myrabolan</td><td>Catechu, Gambir</td></tr>
+        <tr><td>MW</td><td>500–3000 Da</td><td>1000–20000 Da</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Pharmacological Uses of Tannins</h2>
+      <ul>
+        <li><strong>Astringent:</strong> Precipitate proteins on mucous membranes → protective film → reduces inflammation/irritation</li>
+        <li><strong>Hemostatic:</strong> Constrict small blood vessels</li>
+        <li><strong>Antidiarrheal:</strong> Reduce intestinal secretion</li>
+        <li><strong>Antimicrobial:</strong> Precipitate bacterial proteins</li>
+        <li><strong>Antioxidant</strong></li>
+        <li><strong>Antidote:</strong> Precipitate alkaloids and heavy metals in poisoning</li>
+      </ul>
+      <h3>Chemical Tests for Tannins</h3>
+      <ul>
+        <li>FeCl₃ test → Blue-black (hydrolysable) or Green-black (condensed) color</li>
+        <li>Gelatin test → White precipitate</li>
+        <li>Lead acetate test → White precipitate</li>
+        <li>Bromine water → Decolorization</li>
+      </ul>
+      <h3>Important Tannin-containing Drugs</h3>
+      <ul>
+        <li><strong>Catechu:</strong> Acacia catechu — Astringent for mouth ulcers</li>
+        <li><strong>Tannic acid:</strong> From oak galls — Antidote for alkaloid poisoning</li>
+        <li><strong>Witch hazel:</strong> Hamamelis virginiana — Hemorrhoids, skin care</li>
+        <li><strong>Pomegranate rind:</strong> Anthelmintic, astringent</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><i class="ti ti-droplet-filled icon" aria-hidden="true"></i> Resins</h2>
+      <p>Resins are amorphous solid or semi-solid oxidized terpene products formed in specialized secretory cells. They are insoluble in water but soluble in organic solvents (alcohol, ether).</p>
+      <h3>Classification</h3>
+      <ul>
+        <li><strong>Resins:</strong> Pure — e.g., Colophony (rosin from turpentine), Jalap resin</li>
+        <li><strong>Oleoresins:</strong> Resin + volatile oil — e.g., Turpentine, Ginger, Capsicum</li>
+        <li><strong>Oleo-gum-resins:</strong> Resin + gum + volatile oil — e.g., Asafoetida, Myrrh, Galbanum</li>
+        <li><strong>Balsams:</strong> Resins with aromatic acids (benzoic/cinnamic acid) — e.g., Benzoin, Peru balsam, Tolu balsam</li>
+        <li><strong>Glycoresins:</strong> Resin with sugar — e.g., Jalap, Scammony, Podophyllum</li>
+      </ul>
+      <h3>Pharmaceutical Uses of Resins</h3>
+      <ul>
+        <li>Colophony → Sticking plasters, zinc ointment base</li>
+        <li>Balsam of Peru → Wound healing, scabies</li>
+        <li>Benzoin → Expectorant (Friar's balsam), antiseptic</li>
+        <li>Podophyllum resin → Condylomata acuminata treatment, anticancer (Etoposide)</li>
+        <li>Asafoetida → Carminative, antispasmodic</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- OILS & WAXES -->
+  <div id="oils" class="section">
+    <div class="card">
+      <h2><i class="ti ti-flame icon" aria-hidden="true"></i> Volatile (Essential) Oils</h2>
+      <p>Volatile oils (ethereal oils/essential oils) are odoriferous, volatile liquid mixtures of terpenes and other aromatic compounds obtained from plant materials. They evaporate at room temperature (hence "volatile").</p>
+      <div class="highlight">
+        <strong>Key difference from fixed oils:</strong> Volatile oils evaporate readily, leave no permanent grease stain on paper, and are not glycerol esters.
+      </div>
+      <h3>Chemical Composition</h3>
+      <ul>
+        <li><strong>Terpenes:</strong> Monoterpenes (major) — limonene, pinene, cymene</li>
+        <li><strong>Oxygenated compounds:</strong> Alcohols (menthol), aldehydes (citral), ketones (camphor), esters (linalyl acetate), phenols (thymol, eugenol), oxides (eucalyptol/1,8-cineole)</li>
+        <li><strong>Sulfur/Nitrogen compounds:</strong> Sinigrin (mustard), garlic compounds</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Methods of Extraction of Volatile Oils</h2>
+      <table>
+        <tr><th>Method</th><th>Principle</th><th>Used For</th></tr>
+        <tr><td>Steam distillation</td><td>Immiscible liquids — lower boiling point together</td><td>Most oils — rose, peppermint, eucalyptus</td></tr>
+        <tr><td>Expression (Cold pressing)</td><td>Mechanical pressure</td><td>Citrus peel oils — lemon, orange</td></tr>
+        <tr><td>Enfleurage</td><td>Fat absorbs oil at room temp</td><td>Delicate flowers — jasmine, tuberose</td></tr>
+        <tr><td>Solvent extraction</td><td>Solvent dissolves oil</td><td>Expensive/delicate oils</td></tr>
+        <tr><td>CO₂ extraction</td><td>Supercritical CO₂ as solvent</td><td>High quality extracts</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Important Volatile Oils</h2>
+      <table>
+        <tr><th>Oil</th><th>Source</th><th>Major Constituent</th><th>Use</th></tr>
+        <tr><td>Peppermint oil</td><td>Mentha piperita</td><td>Menthol (50%)</td><td>Carminative, flavoring, antiseptic</td></tr>
+        <tr><td>Eucalyptus oil</td><td>Eucalyptus globulus</td><td>Eucalyptol/1,8-cineole (70%)</td><td>Expectorant, antiseptic, inhalation</td></tr>
+        <tr><td>Clove oil</td><td>Syzygium aromaticum</td><td>Eugenol (70-90%)</td><td>Dental analgesic, antiseptic</td></tr>
+        <tr><td>Turpentine oil</td><td>Pinus palustris</td><td>α-pinene, β-pinene</td><td>Counterirritant, solvent</td></tr>
+        <tr><td>Cinnamon oil</td><td>Cinnamomum zeylanicum</td><td>Cinnamaldehyde</td><td>Flavoring, antimicrobial</td></tr>
+        <tr><td>Fennel oil</td><td>Foeniculum vulgare</td><td>Trans-anethole (60%)</td><td>Carminative, flavoring</td></tr>
+        <tr><td>Garlic oil</td><td>Allium sativum</td><td>Allicin (diallyl thiosulfinate)</td><td>Antimicrobial, antihypertensive</td></tr>
+        <tr><td>Rose oil</td><td>Rosa damascena</td><td>Geraniol, Citronellol</td><td>Perfumery, flavoring</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2><i class="ti ti-droplets icon" aria-hidden="true"></i> Fixed Oils (Fatty Oils)</h2>
+      <p>Fixed oils are non-volatile, oily liquids or solids composed mainly of glycerides (esters of glycerol + fatty acids). They leave a permanent grease stain on paper and do NOT evaporate.</p>
+      <h3>Classification</h3>
+      <ul>
+        <li><strong>Drying oils:</strong> High in polyunsaturated fatty acids — dry on exposure to air (linseed, tung oil)</li>
+        <li><strong>Semi-drying oils:</strong> Partially dry — sunflower, cottonseed, sesame oil</li>
+        <li><strong>Non-drying oils:</strong> Do not dry — castor oil (ricinoleic acid), olive oil (oleic acid), almond oil</li>
+      </ul>
+      <h3>Important Fixed Oils</h3>
+      <table>
+        <tr><th>Oil</th><th>Source</th><th>Fatty Acids</th><th>Pharmaceutical Use</th></tr>
+        <tr><td>Castor oil</td><td>Ricinus communis</td><td>Ricinoleic acid (90%)</td><td>Purgative, emollient, excipient</td></tr>
+        <tr><td>Olive oil</td><td>Olea europaea</td><td>Oleic acid (75%)</td><td>Emollient, vehicle, nutritive</td></tr>
+        <tr><td>Arachis oil</td><td>Arachis hypogaea</td><td>Oleic + linoleic</td><td>Vehicle for IM injections</td></tr>
+        <tr><td>Coconut oil</td><td>Cocos nucifera</td><td>Lauric acid (48%)</td><td>Base for ointments, suppositories</td></tr>
+        <tr><td>Cod liver oil</td><td>Gadus morhua (fish)</td><td>Vitamins A & D</td><td>Nutritional supplement</td></tr>
+        <tr><td>Evening primrose oil</td><td>Oenothera biennis</td><td>γ-linolenic acid</td><td>Eczema, PMS</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- OTHER PHYTOCHEMICALS -->
+  <div id="other" class="section">
+    <div class="card">
+      <h2><i class="ti ti-plant icon" aria-hidden="true"></i> Gums & Mucilages</h2>
+      <h3>Gums</h3>
+      <p>Gums are complex polysaccharides (heteropolysaccharides) produced by plants as a result of pathological conditions (wounding, disease). They are water-soluble, form viscous solutions.</p>
+      <table>
+        <tr><th>Gum</th><th>Source</th><th>Composition</th><th>Use</th></tr>
+        <tr><td>Gum acacia (Arabic)</td><td>Acacia senegal</td><td>Arabinose, galactose, glucuronic acid</td><td>Emulsifying agent, suspending agent, demulcent</td></tr>
+        <tr><td>Gum tragacanth</td><td>Astragalus gummifer</td><td>Tragacanthin (water-soluble) + Bassorin (swells)</td><td>Emulsifier, suspending agent, binding agent</td></tr>
+        <tr><td>Guar gum</td><td>Cyamopsis tetragonoloba</td><td>Galactomannan</td><td>Thickener, laxative, antidiabetic</td></tr>
+        <tr><td>Karaya gum</td><td>Sterculia urens</td><td>Acetylated polysaccharide</td><td>Laxative, denture adhesive, stoma care</td></tr>
+      </table>
+      <h3>Mucilages</h3>
+      <p>Similar to gums but formed as normal metabolic products. They absorb water and swell to form a gel.</p>
+      <ul>
+        <li><strong>Ispaghula (Psyllium husk):</strong> Plantago ovata — Laxative (bulk forming), cholesterol-lowering</li>
+        <li><strong>Linseed (Flaxseed):</strong> Linum usitatissimum — Demulcent, laxative, source of omega-3 ALA</li>
+        <li><strong>Aloe vera gel:</strong> Aloe barbadensis — Wound healing, anti-inflammatory</li>
+        <li><strong>Slippery elm:</strong> Ulmus rubra — Demulcent for GI inflammation</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Proteins & Enzymes of Plant Origin</h2>
+      <table>
+        <tr><th>Enzyme/Protein</th><th>Source</th><th>Use</th></tr>
+        <tr><td>Papain</td><td>Carica papaya (latex)</td><td>Digestive enzyme, debridement, meat tenderizer</td></tr>
+        <tr><td>Bromelain</td><td>Ananas comosus (pineapple)</td><td>Anti-inflammatory, digestive aid</td></tr>
+        <tr><td>Ficin</td><td>Ficus sp.</td><td>Digestive enzyme, anthelmintic</td></tr>
+        <tr><td>Lectin (Concanavalin A)</td><td>Jack bean (Canavalia)</td><td>Research tool, agglutination</td></tr>
+        <tr><td>Ricin</td><td>Ricinus communis (seeds)</td><td>TOXIC — potential bioweapon research</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Vitamins of Plant Origin</h2>
+      <table>
+        <tr><th>Vitamin</th><th>Chemical Name</th><th>Plant Source</th><th>Deficiency</th></tr>
+        <tr><td>Vitamin C</td><td>Ascorbic acid</td><td>Amla, citrus, rose hips</td><td>Scurvy</td></tr>
+        <tr><td>Vitamin K</td><td>Phylloquinone</td><td>Leafy greens, alfalfa</td><td>Bleeding disorders</td></tr>
+        <tr><td>Pro-Vitamin A</td><td>β-Carotene</td><td>Carrots, sweet potato</td><td>Night blindness</td></tr>
+        <tr><td>Vitamin E</td><td>Tocopherol</td><td>Wheat germ oil, nuts</td><td>Hemolytic anemia</td></tr>
+        <tr><td>Folic acid (B9)</td><td>Pteroylglutamic acid</td><td>Spinach, asparagus</td><td>Megaloblastic anemia, NTDs</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Cyanogenic Glycosides & Mustard Oil Glycosides</h2>
+      <h3>Cyanogenic Glycosides</h3>
+      <ul>
+        <li>Release HCN (hydrocyanic acid) on hydrolysis by β-glucosidase enzyme</li>
+        <li><strong>Amygdalin:</strong> Prunus amygdalus (bitter almond), apricot seeds — antitussive; controversial as "Laetrile" in cancer</li>
+        <li><strong>Prunasin:</strong> Prunus species</li>
+        <li>HCN inhibits cytochrome c oxidase → cellular asphyxia → toxic in high doses</li>
+      </ul>
+      <h3>Glucosinolates (Isothiocyanate Glycosides)</h3>
+      <ul>
+        <li>Release isothiocyanates + glucose + sulfate on hydrolysis by myrosinase</li>
+        <li><strong>Sinigrin:</strong> Black mustard (Brassica nigra) → allyl isothiocyanate (counterirritant)</li>
+        <li><strong>Sinalbin:</strong> White mustard (Sinapis alba) → p-hydroxybenzyl isothiocyanate (milder)</li>
+        <li>Used externally as rubefacient/counterirritant (mustard plasters)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- VIVA Q&A -->
+  <div id="viva" class="section">
+    <div class="card">
+      <h2><i class="ti ti-help-circle icon" aria-hidden="true"></i> Predicted Viva Questions & Model Answers</h2>
+
+      <div class="qa">
+        <div class="q">Q: What are phytochemicals? How are they different from primary metabolites?</div>
+        <div class="a">Phytochemicals are secondary metabolites of plants — biologically active compounds not essential for basic plant survival but providing protection and ecological functions. Unlike primary metabolites (carbohydrates, proteins, lipids) which are universal and essential for all cells, secondary metabolites are species-specific and serve roles like defense against herbivores, UV protection, and attraction of pollinators. Examples: alkaloids, glycosides, terpenes, flavonoids.</div>
+      </div>
+
+      <div class="qa">
+        <div class="q">Q: What is the difference between an alkaloid and a glycoside?</div>
+        <div class="a">Alkaloids: N-containing, basic compounds, heterocyclic ring, no sugar component. Examples: morphine, quinine. Glycosides: contain sugar (glycone) + non-sugar (aglycone) linked by glycosidic bond. No N in ring (usually). Examples: digoxin, sennosides. Key test: alkaloids precipitate with Mayer's/Dragendorff's; glycosides undergo hydrolysis to sugar + aglycone.</div>
+      </div>
+
+      <div class="qa">
+        <div class="q">Q: Explain the mechanism of action of cardiac glycosides.</div>
+        <div class="a">Cardiac glycosides (e.g., digoxin) inhibit Na⁺/K⁺-ATPase pump on cardiac cell membranes. This causes intracellular Na⁺ accumulation. The Na⁺/Ca²⁺ exchanger then pumps less Ca²⁺ out, increasing intracellular Ca²⁺. Higher Ca²⁺ during systole causes stronger cardiac contraction (positive inotropic effect). They also slow heart rate (negative chronotropic) via vagal stimulation.</div>
+      </div>
+
+      <div class="qa">
+        <div class="q">Q: What is the isoprene rule? Give examples of each class of terpenes.</div>
+        <div class="a">Proposed by Wallach — all terpenes are built from C₅ isoprene units (2-methylbuta-1,3-diene). Examples: Monoterpenes (C₁₀, 2 units) = menthol, camphor; Sesquiterpenes (C₁₅, 3 units) = artemisinin; Diterpenes (C₂₀, 4 units) = taxol; Triterpenes (C₃₀, 6 units) = squalene; Tetraterpenes (C₄₀, 8 units) = β-carotene.</div>
+      </div>
+
+      <div class="qa">
+        <div class="q">Q: What are saponins? How are they classified? Give uses.</div>
+        <div class="a">Saponins are glycosides that produce persistent froth when shaken with water, due to their soap-like (amphiphilic) structure. Classified as: (1) Triterpenoid saponins — glycyrrhizin from liquorice, (2) Steroidal saponins — diosgenin from Dioscorea (used to synthesize cortisone, contraceptives). Properties: hemolytic, foam-forming, precipitate cholesterol. Uses: expectorants, diuretics, vaccine adjuvants, steroid synthesis precursors.</div>
+      </div>
+
+      <div class="qa">
+        <div class="q">Q: Differentiate between hydrolysable and condensed tannins.</div>
+        <div class="a">Hydrolysable tannins: hydrolyzed by acid/alkali/enzyme into sugars + gallic acid (gallotannins) or ellagic acid (ellagitannins). FeCl₃ gives blue-black. Example: tannic acid. Condensed tannins: resistant to hydrolysis; on acid treatment give red phlobaphenes (anthocyanidins). FeCl₃ gives green-black. Example: catechu (catechins/proanthocyanidins). Higher MW than hydrolysable.</div>
+      </div>
+
+      <div class="qa">
+        <div class="q">Q: What are the differences between volatile oils and fixed oils?</div>
+        <div class="a">Volatile oils: evaporate at room temp, no grease stain, mainly terpenes/oxygenated compounds, odoriferous, used for antiseptic/carminative/expectorant effects. Fixed oils: non-volatile, glycerol esters of fatty acids, leave permanent grease stain, used as emollients/vehicles/laxatives. Test: place on filter paper — volatile oil evaporates without stain, fixed oil leaves permanent stain.</div>
+      </div>
+
+      <div class="qa">
+        <div class="q">Q: Name alkaloid identification tests and what they detect.</div>
+        <div class="a">General alkaloid precipitant tests — Mayer's (cream ppt), Dragendorff's (orange-red ppt), Wagner's (brown ppt), Hager's (yellow ppt). Specific tests: Marquis test (morphine → purple), Vitali-Morin (atropine → purple with fuming HNO₃+KOH), Thalleioquin (quinine → green). These tests exploit the basic nitrogen's ability to form insoluble complexes with heavy metal reagents.</div>
+      </div>
+
+      <div class="qa">
+        <div class="q">Q: What is Shinoda test? For which class of compounds is it used?</div>
+        <div class="a">Shinoda test is used to identify flavonoids. A small amount of magnesium ribbon (or powder) is added to the plant extract, followed by concentrated HCl. Flavonoids (flavones, flavonols, flavanones) give a pink to red color due to reduction by nascent hydrogen. Absence of color suggests absence of flavonoids. Isoflavones give a pale yellow to no color.</div>
+      </div>
+
+      <div class="qa">
+        <div class="q">Q: What is the pharmacological importance of Artemisinin?</div>
+        <div class="a">Artemisinin is a sesquiterpene lactone from Artemisia annua. It contains an endoperoxide bridge (–O–O–) which is responsible for activity. It reacts with heme iron in malaria parasites to form free radicals that alkylate and damage parasite proteins. It is the most potent antimalarial especially against drug-resistant Plasmodium falciparum. Nobel Prize in Physiology (2015) awarded to Tu Youyou for its discovery. Used as Artemisinin Combination Therapy (ACT).</div>
+      </div>
+
+      <div class="qa">
+        <div class="q">Q: What are resins? Classify them with examples.</div>
+        <div class="a">Resins are amorphous, solid/semi-solid oxidized terpene secretions insoluble in water but soluble in alcohol/ether. Classified as: (1) Resins — colophony/jalap resin; (2) Oleoresins (resin+volatile oil) — turpentine/ginger; (3) Oleo-gum-resins (resin+gum+volatile oil) — asafoetida/myrrh; (4) Balsams (resin+benzoic/cinnamic acid) — benzoin/peru balsam; (5) Glycoresins (resin+sugar) — jalap/podophyllum.</div>
+      </div>
+
+      <div class="qa">
+        <div class="q">Q: Which phytochemical is the precursor for steroid hormone synthesis?</div>
+        <div class="a">Diosgenin — a steroidal saponin aglycone obtained from Dioscorea species (wild yam). It is a key raw material (starting material) for the partial synthesis of corticosteroids (cortisone), progestogens, androgens, and estrogens including oral contraceptives. Stigmasterol (from soybean) is also used similarly.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><i class="ti ti-bulb icon" aria-hidden="true"></i> Memory Tips & Key Facts</h2>
+      <h3>AMTFTR Mnemonic — Classes of Phytochemicals</h3>
+      <p style="font-size:14px; color: var(--color-text-secondary)"><strong>A</strong>lkaloids, <strong>M</strong>ucilages/Gums, <strong>T</strong>erpenes, <strong>F</strong>lavonoids/Phenolics, <strong>T</strong>annins, <strong>R</strong>esins/Oils</p>
+      <h3>Key Drug-Plant-Class Associations</h3>
+      <ul>
+        <li>Morphine ← Opium poppy ← Isoquinoline alkaloid</li>
+        <li>Quinine ← Cinchona bark ← Quinoline alkaloid</li>
+        <li>Atropine ← Belladonna ← Tropane alkaloid</li>
+        <li>Digoxin ← Digitalis lanata ← Cardiac glycoside</li>
+        <li>Taxol ← Pacific Yew ← Diterpene</li>
+        <li>Artemisinin ← Artemisia annua ← Sesquiterpene</li>
+        <li>Vinblastine ← Catharanthus ← Bis-indole alkaloid</li>
+        <li>Diosgenin ← Dioscorea ← Steroidal saponin</li>
+      </ul>
+      <h3>Chemical Tests Quick Recall</h3>
+      <ul>
+        <li><strong>Mayer's/Dragendorff's/Wagner's</strong> → Alkaloids (precipitate)</li>
+        <li><strong>Keller-Kiliani</strong> → Deoxy sugars in cardiac glycosides (blue ring)</li>
+        <li><strong>Legal/Kedde/Raymond</strong> → Lactone ring of cardiac glycosides</li>
+        <li><strong>Shinoda test</strong> → Flavonoids (Mg + HCl → pink/red)</li>
+        <li><strong>FeCl₃</strong> → Tannins (blue-black/green-black) & phenolics</li>
+        <li><strong>Foam test</strong> → Saponins</li>
+        <li><strong>Liebermann-Burchard</strong> → Steroids/Triterpenes (green)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+function show(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
